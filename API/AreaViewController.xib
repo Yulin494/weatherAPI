@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AreaViewController" customModule="API" customModuleProvider="target">
+            <connections>
+                <outlet property="AreaLabel" destination="bJa-Mb-sGX" id="PAI-UQ-ekS"/>
+                <outlet property="TView" destination="hYs-RN-YNl" id="Nr9-5g-uQq"/>
+                <outlet property="backBTN" destination="Bmr-E7-BTj" id="Fsk-Tg-zkM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hYs-RN-YNl">
+                    <rect key="frame" x="0.0" y="158" width="414" height="409"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmr-E7-BTj">
+                    <rect key="frame" x="155.5" y="664" width="103.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="選擇城市"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="VeE-Nt-CAM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-Mb-sGX">
+                    <rect key="frame" x="124" y="49.5" width="166" height="82"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Bmr-E7-BTj" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.0378973" id="10k-9W-FLU"/>
+                <constraint firstItem="hYs-RN-YNl" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="HU3-Mw-QRb"/>
+                <constraint firstItem="hYs-RN-YNl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MA8-y3-uav"/>
+                <constraint firstItem="bJa-Mb-sGX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NhR-Oe-3Gt"/>
+                <constraint firstItem="Bmr-E7-BTj" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="1.5" id="aPw-8a-DZl"/>
+                <constraint firstItem="hYs-RN-YNl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.8" id="b7d-j8-pfl"/>
+                <constraint firstItem="Bmr-E7-BTj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="b89-ts-BSm"/>
+                <constraint firstItem="bJa-Mb-sGX" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.4" id="bWp-a9-iY3"/>
+                <constraint firstItem="bJa-Mb-sGX" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.1" id="dNY-uQ-WDF"/>
+                <constraint firstItem="bJa-Mb-sGX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.2" id="keN-eh-kdM"/>
+                <constraint firstItem="Bmr-E7-BTj" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.25" id="oVY-SG-Ucm"/>
+                <constraint firstItem="hYs-RN-YNl" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.5" id="x7U-pV-WhF"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
